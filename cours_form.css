@@ -1,0 +1,57 @@
+body{
+    font-family: monospace;
+}
+form{
+    display: flex;
+    justify-content: center;
+
+}
+ul{
+    list-style-type: none;
+}
+
+h1 {
+    margin-top : 2em;
+    text-align : center;
+    border-bottom : solid black 10px;
+}
+
+fieldset#main{
+    padding : 50px;
+    width : 450px;
+}
+
+legend{
+    text-transform: uppercase;
+}
+
+label, legend{
+    font-weight : bold;
+}
+
+label.label_left{
+    width : 150px;
+    display: block; 
+    float: left;
+}
+
+fieldset.fieldset_naiss{
+    width : 250px;
+}
+
+fieldset.connaissce{
+    width : 200px;
+    color : red;
+    background-color : #C0C0FF;
+}
+
+footer{
+    text-align : center;
+    margin-top : 2em;
+    border-top : solid blue 5px;
+    border-bottom : solid blue 5px;
+}
+
+li{
+    margin : 10px;
+}

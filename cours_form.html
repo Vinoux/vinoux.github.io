@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TP 2 : Premier formulaire </title>
+        <link rel="stylesheet" href="cours_form.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Cours : Formulaire HTML5</h1>
+        </header>
+        <section>
+            <form action = "cours_form_action.html" method="POST">
+                <fieldset id="main">
+                    <legend>Vos données personnelles</legend>
+                    <ul>
+                        <li>
+                            <label class="label_left" for="nom">Nom&nbsp;:</label>
+                            <input id="nom" name="nom" type="text" placeholder="Votre nom"/>
+                        </li>
+                        <li>
+                            <label class="label_left" for="prenom">Prénom&nbsp;:</label>
+                            <input id="prenom" name="prenom" type="text" placeholder="Votre prénom"/>
+                        </li>
+                        <li>
+                            <label "class="label_left" for="date_naiss">Date de naissance&nbsp;:</label>
+                            <input id="date_naiss" name="date_naiss" type="date" placeholder="Votre date de naissance"/>
+                        </li>
+                        <li>
+                            <fieldset class="fieldset_naiss">
+                                <legend>Lieu de naissance</legend>
+                                <input id="lieu_naiss_marseille" name="lieu_naiss" type="radio" value="Marseille" checked/>
+                                <label >Marseille</label>
+                                <input id="lieu_naiss_autre" name="lieu_naiss" type="radio" value="Reste du monde"/>
+                                <label >Reste du monde</label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <label class="label_left" for="adr">Adresse postale&nbsp;:</label>
+                            <input id="adr" name="adr" type="textarea" placeholder="Votre adresse postale" rows="2" cols="30"/>
+                        </li>
+                        <li>
+                            <label class="label_left" for="cp">Code Postal&nbsp;:</label>
+                            <input id="cp" name="cp" type="number" min="0" max="99999" placeholder="12"/>
+                        </li>
+                        <li>
+                            <label class="label_left" for="mail">Adresse mail&nbsp;:</label>
+                            <input id="mail" name="mail" type="email" placeholder="Votre adresse mail"/>
+                        </li>
+                        <li>
+                            <label class="label_left" for="page_perso">Page personnelle&nbsp;:</label>
+                            <input id="page_perso" name="page_perso" type="url" placeholder="Votre page personnelle"/>
+                        </li>
+                        <li>
+                            <label class="label_left" for="tel">Téléphone&nbsp;:</label>
+                            <input id="tel" name="tel" type="text" placeholder="Votre numéro de téléphone" pattern="[0][6-7][0-9]{8}" 
+oninvalid="setCustomValidity('Numéro à 10 chiffres sans espace et commençant par 06 ou 0')" />
+                        </li>
+                        <li>
+                            <label class="label_left" for="semestre">Semestre&nbsp;:</label>
+                            <select id="semestre" name="semestre" id="pet-select">
+
+                                <option value="s1">S1</option>
+                                <option value="s2" selected>S2</option>
+                                <option value="s3">S3</option>
+                                <option value="s4">S4</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label class="label_left" for="niv_html">Niveau en HTML&nbsp;:</label>
+                            <input id="niv_html" name="niv_html" type="range" min="0" max="10" step="1"/>
+                        </li>
+                        <li>
+                            <fieldset class="connaissce" >
+                                <legend>Connaissances</legend>
+                                <ul>
+                                    <li>
+                                        <input id="connaissce_html" name="connaissce" type="checkbox" value="HTML" checked/>
+                                        <label>HTML</label>
+                                    </li>
+                                    <li>
+                                        <input id="connaissce_css" name="connaissce" type="checkbox" value="CSS"/>
+                                        <label >CSS</label>
+                                    </li>
+                                    <li>
+                                        <input id="connaissce_form" name="connaissce" type="checkbox" value="Formulaires"/>
+                                        <label >Formulaires</label>
+                                    </li>
+                                    <li>
+                                        <input id="connaissce_js" name="connaissce" type="checkbox" value="Java Script"/>
+                                        <label >Java Script</label>
+                                    </li>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <input type="submit" value="Envoyer" />
+                            <input type="reset" value="Effacer" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            Formulaire réalisé dans le cadre du cours de 1ère NSI
+        </footer>
+    </body>
+</html>
+
